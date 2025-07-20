@@ -35,6 +35,8 @@ export default defineConfig({
         ignoreURLParametersMatching: [/.*/],
         // 忽略網址參數，不同參數當作相同檔案，所有參數都忽略
         // a.jpg = a.jpg?fbclid=1234
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        // 把文件快取上限增加到5MB
       },
       // PWA 工具庫，自訂 service worker 的行為
       manifest: {
